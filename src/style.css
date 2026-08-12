@@ -72,7 +72,7 @@ img { max-width: 100%; display: block; }
 .service-grid { display: grid; grid-template-columns: 1.25fr .75fr; grid-auto-rows: 410px; gap: 16px; }
 .service-card { position: relative; display: flex; justify-content: space-between; padding: 30px; overflow: hidden; isolation: isolate; border: 1px solid var(--line); }
 .service-card::before { content: ''; position: absolute; inset: 0; z-index: -2; background: var(--image) center/cover; filter: grayscale(1); transition: transform .6s, filter .6s; }
-.service-card::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(7,8,10,.1), rgba(7,8,10,.95)); }
+.service-card::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(7,8,10,.03) 20%, rgba(7,8,10,.22) 53%, rgba(7,8,10,.9) 100%); }
 .service-card:hover::before { transform: scale(1.045); filter: grayscale(0); }
 .service-card--large { grid-row: span 2; }
 .service-card--wide { grid-column: 2; }
